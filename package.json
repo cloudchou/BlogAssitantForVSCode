@@ -11,14 +11,19 @@
         "Other"
     ],
     "activationEvents": [
-        "onCommand:extension.sayHello"
+        "onCommand:extension.newBlog",
+        "onCommand:extension.pingBlogSe"
     ],
     "main": "./extension",
     "contributes": {
         "commands": [
             {
-                "command": "extension.sayHello",
-                "title": "Hello World"
+                "command": "extension.newBlog",
+                "title": "Blog: new"
+            },
+            {
+                "command": "extension.pingBlogSe",
+                "title": "Blog: ping blog search engine"
             }
         ]
     },
